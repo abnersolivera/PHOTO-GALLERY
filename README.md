@@ -7,7 +7,7 @@ Este projeto é uma aplicação desenvolvida com Angular e Ionic. Ele fornece um
 Para instalar e executar este projeto, você precisará ter o Node.js, npm, Angular, Ionic e SQLite instalados em sua máquina. Após instalar essas dependências, você pode instalar o projeto com os seguintes comandos:
 
 ```bash
-git clone [url](https://github.com/abnersolivera/PHOTO-GALLERY.git)
+git clone https://github.com/abnersolivera/PHOTO-GALLERY.git
 cd photo-gallery
 npm install
 ionic serve
