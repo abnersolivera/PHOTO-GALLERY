@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-toolbar *ngIf="modal">
+        <ion-button slot="start">
+            <ion-button color="medium" (click)="cancel()">Cancel</ion-button>
+        </ion-button>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+    <form [formGroup]="formGroup" (ngSubmit)="salvar()">
+        <ion-item>
+            <ion-input label="Nome" formControlName="nome" errorText="Nome é obrigatorio"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input label="Telefone" formControlName="telefone"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input label="Email" formControlName="email" errorText="Email invalido"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input label="Hobbie" formControlName="hobbie"></ion-input>
+        </ion-item>
+
+        <ion-row>
+            <ion-col>
+                <ion-button type="submit" expand="block">
+                    Salvar
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </form>
+</ion-content>
